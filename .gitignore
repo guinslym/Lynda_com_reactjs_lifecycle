@@ -4,6 +4,7 @@
 /node_modules
 /lifecycle-logger/node_modules
 /node_modules2
+*/*/*/node_modules/
 
 # testing
 /coverage
