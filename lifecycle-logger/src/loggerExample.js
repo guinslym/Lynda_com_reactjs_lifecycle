@@ -159,6 +159,7 @@ const ParentContainer = styled.div`
   background-color: salmon;
   display: flex;
   align-items: flex-start;
+  flex-direction: column;
 `
 
 const ChildContainer = styled.div`
