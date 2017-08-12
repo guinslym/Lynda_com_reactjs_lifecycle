@@ -10,4 +10,18 @@ class App extends Component {
   }
 }
 
+function myTestWrapper(WrappedComponeent){
+  return class extends Component{
+    render(){
+      return (
+        <div style={{backgroundColor: 'blue'}}>
+          <WrappedComponeent />
+        </div>
+    )
+    }
+  }
+}
+
+
+App  = myTestWrapper(App)
 export default App
