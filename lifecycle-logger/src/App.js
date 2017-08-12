@@ -1,7 +1,19 @@
 import React, { Component } from 'react'
 
 class App extends Component {
+
+  static displayName = "SomethingNew"
+
+  static defaultProps = {
+    someImportArray: []
+  }
+
+  state = {
+    ourInitialState: 'golden'
+  }
+
   render() {
+    console.log(this.props)
     return (
       <h1>
         Hello
@@ -10,18 +22,5 @@ class App extends Component {
   }
 }
 
-function myTestWrapper(WrappedComponeent){
-  return class extends Component{
-    render(){
-      return (
-        <div style={{backgroundColor: 'blue'}}>
-          <WrappedComponeent />
-        </div>
-    )
-    }
-  }
-}
 
-
-App  = myTestWrapper(App)
 export default App
